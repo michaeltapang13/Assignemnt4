@@ -13,16 +13,16 @@ function HomeMainSection() {
     <main>
       <section>
         <h2>About Us</h2>
-        <p>Our Vision and Mission...</p>
+        <p>Welcome to our online store! We are passionate about providing high-quality products and exceptional customer service. Learn more about our story and commitment to your satisfaction.</p>
         <button onClick={() => window.location.href='/products'}>Shop Now</button>
       </section>
       <section>
         <h2>Customer Reviews</h2>
         {randomReviews.map((review, index) => (
           <div key={index}>
-            <h3>{review.customerName}</h3>
+            <p>{review.customerName}</p>
             <p>{review.reviewContent}</p>
-            <p>{'★'.repeat(review.stars)}</p>
+            <p>Rating:{'★'.repeat(review.stars)}</p>
           </div>
         ))}
       </section>
